@@ -2,4 +2,8 @@ const Client = require("../lib/client.js")
 
 let client = new Client()
 
-client.goToHomePage()
+client.fetchChecklistsData(processChecklists)
+
+function processChecklists(data) {
+  console.log(data);
+}
